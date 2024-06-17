@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "will create a README file with input created dinamically in the terminal",
   "main": "index.js",
+  "type": "module",
   "dependencies": {
     "ansi-escapes": "^4.3.2",
     "ansi-regex": "^5.0.1",
