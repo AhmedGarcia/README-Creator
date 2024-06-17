@@ -18,25 +18,34 @@ const questions = [
   },
   {
     type: 'input',
-    name: 'hobby',
-    message: 'What is your favorite hobby?',
+    name: 'installation',
+    message: 'Please provide installation instructions:',
   },
   {
     type: 'input',
-    name: 'food',
-    message: 'What is your favorite food?',
+    name: 'usage',
+    message: 'Whats the usage iformation?',
   },
   {
     type: 'input',
-    name: 'github',
-    message: 'Enter your GitHub Username',
+    name: 'contributing',
+    message: 'What are the contribution guidelines?',
   },
   {
     type: 'input',
-    name: 'linkedin',
-    message: 'Enter your LinkedIn URL.',
+    name: 'tests',
+    message: 'What are the test instructions?',
   },
-  // Add more questions for other sections of the README
+  {
+    type: 'input',
+    name: 'email',
+    message: 'What email would you like to be contacted to?',
+  },
+  {
+    type: 'input',
+    name: 'username',
+    message: 'What is your GitHub username?',
+  },
 ];
 
 
