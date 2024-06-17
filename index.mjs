@@ -13,7 +13,7 @@ const questions = [
   },
   {
     type: 'input',
-    name: 'Description',
+    name: 'description',
     message: 'Type a description of your project?',
   },
   {
@@ -46,6 +46,13 @@ const questions = [
     name: 'username',
     message: 'What is your GitHub username?',
   },
+  {
+    type: 'list',
+    name: 'license',
+    message: 'What is your license?',
+    choices: ['MIT', 'Apache-2.0', 'GPL-3.0','BSD-2-Clause','BSD-3-Clause',
+      'MPL-2.0', 'LGPL-3.0', 'AGPL-3.0', 'AGPL-3.0'],
+  },
 ];
 
 
@@ -62,12 +69,25 @@ function writeToFile(fileName, data) {
 
 
 // TODO: Create a function to initialize app
+// function init() {
+//   inquirer.prompt(questions).then(answers => {
+//     const readmeContent = generateMarkdown(answers);
+//     writeToFile('README.md', readmeContent);
+//   });
+// }
 function init() {
-  inquirer.prompt(questions).then(answers => {
-    const readmeContent = generateMarkdown(answers);
-    writeToFile('README.md', readmeContent);
+  inquirer.prompt(questions).then((answers) => {
+    console.log('Collected Answers:', answers); // Debugging line
+    const markdown = generateMarkdown(answers);
+    console.log('Generated Markdown:', markdown); // Debugging line
+    fs.writeFileSync('README.md', markdown, (err) => {
+      if (err) {
+        console.error('Error writing file:', err);
+      } else {
+        console.log('README.md has been created successfully.');
+      }
+    });
   });
 }
-
 // Function call to initialize app
 init();
