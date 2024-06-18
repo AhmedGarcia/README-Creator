@@ -39,9 +39,7 @@ function renderLicenseSection(license) {
 
   return `## License
 
-This project is licensed under the ${formattedLicense} license. See the [License](https://opensource.org/licenses/${encodeURIComponent(license)}) file for details.
-
-`;
+This project is licensed under the ${formattedLicense} license. See the [License](https://opensource.org/licenses/${encodeURIComponent(license)}) file for details.`;
 }
 
 
@@ -49,6 +47,7 @@ This project is licensed under the ${formattedLicense} license. See the [License
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = (data) => {
   return `# ${data.title}
+
 ${renderLicenseBadge(data.license)}
 
 ## Description
