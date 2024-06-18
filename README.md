@@ -28,11 +28,11 @@ Having installed nodejs, selectected and opened the file in the Integrated termi
 
 ## How To Use
 
-![a screenshot of the answered inquiere prompts in integrated terminal](./assets/images/Screenshot%202024-06-17%20234954.png)
+![a screenshot of the answered inquiere prompts in integrated terminal](./utils/assets/images/Screenshot%202024-06-17%20234954.png)
 
-![a screenshot of the README file that was generated after finnishing the inquirer prompts](./assets/images/Screenshot%202024-06-17%20235032.png)
+![a screenshot of the README file that was generated after finnishing the inquirer prompts](./utils/assets/images/Screenshot%202024-06-17%20235032.png)
 
-![a screenshot of generated README opened in preview](./assets/images/Screenshot%202024-06-17%20235108.png)
+![a screenshot of generated README opened in preview](./utils/assets/images/Screenshot%202024-06-17%20235108.png)
 
 [Video of how it works](https://drive.google.com/file/d/160ejEY5NcqRcyiTKgqReali4iEAcSoPS/view?usp=sharing)
 
@@ -55,6 +55,9 @@ THEN I am taken to the corresponding section of the README
 ```
 
 ## Contact Us
+
 GitHub User: https://github.com/AhmedGarcia
+
 <br>
+
 GitHub Repo: https://github.com/AhmedGarcia/README-Creator
